@@ -20,11 +20,11 @@ install:
     - cmd: curl http://mirrors.kernel.org/sourceware/cygwin/x86_64/release/unzip/unzip-6.0-17.tar.xz -o unzip.tar.xz
     - cmd: tar -xf unzip.tar.xz
 
-    # nasm
+   # nasm
     - cmd: curl https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-win64.zip -o nasm.zip
-    - cmd: usr\bin\unzip nasm.zip
-    - cmd: chmod -R u+x nasm-2.13.01/nasm.exe
-    - cmd: nasm-2.13.01\nasm.exe --version
+    - cmd: usr\bin\unzip -q nasm.zip
+    - cmd: chmod -R u+x nasm-2.14.02/nasm.exe
+    - cmd: nasm-2.14.02\nasm.exe --version
 
     # jom
     - cmd: curl --tlsv1.2 -o jom.tar.xz -L https://github.com/VictorYudin/saturn-jom/releases/download/1.0.5/jom-v1.1.2.tar.xz
