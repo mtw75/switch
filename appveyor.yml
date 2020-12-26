@@ -21,7 +21,7 @@ install:
     - cmd: tar -xf unzip.tar.xz
 
     # nasm
-    - cmd: https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-win64.zip -o nasm.zip
+    - cmd: curl https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-win64.zip -o nasm.zip
     - cmd: usr\bin\unzip nasm.zip
     - cmd: chmod -R u+x nasm-2.13.01/nasm.exe
     - cmd: nasm-2.13.01\nasm.exe --version
